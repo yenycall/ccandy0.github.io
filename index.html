@@ -75,7 +75,18 @@ html에서는              띄어쓰기, <br /> 줄바꿈 무시
  }
 </style> <!--CSS-->
 
+
 <table>
+   <table summary="table기본">
+   <caption>table 기본형태</caption>
+   <thead>
+         <tr><!--한줄 row 행-->
+            <th scope="col" rowspan="2">제목1</th> <!--제목 한칸 colum 옆-->
+            <th scope="col" colspan="2">제목2</th>
+            <th scope="col">제목 3</th>
+         </tr>
+   </thead>
+
    <tr>
       <th rowspan="2">제목1</th> <!--제목 한 칸-->
       <th colspan="2">제목2</th> 
@@ -87,8 +98,42 @@ html에서는              띄어쓰기, <br /> 줄바꿈 무시
       <td>내용2</td>
       <td>내용3</td>
    </tr>
+
+<tbody>
+   <!-- 표 본문-->
+</tbody>
+<tfoot>
+   <!--푸터-->
+</tfoot>
 </table>
 
+<div>블록(block)형 구획 나눔</div>
+<span>인라인(inline)형 구획 나눔</span>
+<!--의미없이 사용하기 좋은 태그-->
+
+<form>
+   <input type="text" placeholder="-기호 없이 숫자만 입력해주세요"  />
+   <input type="text" value="123456"   />
+   <input type="password"  />
+
+   <input type="radio" value="1" name="p1" checked/>사과
+   <input type="radio" value="2" name="p1"/>배
+   <input type="radio" value="3" name="p1"/>딸기
+
+   <input type="checkbox" value="1" checked />빨강
+   <input type="checkbox" value="2" />파랑
+   <input type="checkbox" value="3" />노랑
+   <select>
+      <option>네이버</option>
+      <option>구글</option>
+      <option>계원</option>
+  </select>
+  <textarea rows="5" cols="60">여러 줄의 장문을 작성</textarea>
+  <label for="btn">btn</label>
+  <input type="button" id="btn" value="hello">
+
+  <button> 버튼입니다</button>
+</form>
 
 </body>
 </html> <!--종료태그-->

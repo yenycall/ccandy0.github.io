@@ -14,7 +14,10 @@
 	src: url('PretendardVariable.woff2') format('woff2-variations');
 }
    body {
-    font-family: 'Pretendard Variable'
+    font-family: 'Pretendard Variable';
+    margin: 0px;
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
    }
    div.parent {height: 100px; margin-left: 100px;}
    div.child {background-color: bisque; margin-left:inherit;}
@@ -27,12 +30,7 @@
 img {
     margin: auto;
     display: block;
-}
-div{
-    height: 10vw;
-    position: relative;
-    background: tomato
-}
+}  
 div{
     display: flex;
     justify-content: center;
@@ -40,66 +38,93 @@ div{
 }
 
 img {
-        width: 60%;
+        width: 100vw;
         margin: auto;
         display: block;
         /* ssd */
     }
+#hello{
+   font-size: 100px;
+   position: fixed;
+   color: aliceblue;
+   margin-left:20px;
+   z-index: 10;
+}
+
+th, td {
+            border : solid 1px sandybrown
+         }
+         .box{
+                width: 100vw;
+                /* height: 900px; */
+                /* background-color: black; */
+            }
+            .box:hover{
+                /* transform: translateX(-900px); */
+                transition: 5s;
+                z-index: 0;
+            }
+            img{
+                width: 100%;
+                
+            }
     </style>
 </head>
 <body>
- 
-    <img class="object" width="600px" height="auto" 
-    src="https://travel.home.sndimg.com/content/dam/images/travel/fullset/2012/06/21/03/atlantisdubi.jpg.rend.hgtvcom.616.462.suffix/1491581911986.jpeg" />
-    <br><br>
-    <button class="play">play</button>
-   <button class="stop">stop</button>
-   <br><br>
-   <div></div>
    
+         <div id="hello">Marine Life</div>
+         <img class="box" src="1.jpg" />
+         <img src="2.jpg" alt="marine life">
+         <br><br>
+         <button class="play">play</button>
+         <button class="stop">stop</button>
+         <br><br>
+         <div></div>
+         
 
-  <h1>자유주제를 소개하는 페이지</h1>
-이때까지 배운 HTML 모두 사용
+      <h1>멸종위기 해양생물 백과</h1>
+      이때까지 배운 HTML 모두 사용
+         
+         <table>
+            <tr>
+               <th rowspan="2">아랍</th> <!--제목 한 칸-->
+               <th colspan="2">제목1</th>
+               <th colspan="4">제목2</th> 
+               <th>제목3</th> 
+            </tr>
+         
+            <tr>
+               <td>바키타돌고래</td>
+               <td>북대서양긴수염고래</td>
+               <td>양쯔강상괭이</td> <!--내용 한 칸-->
+               <td>태평양몽크바다표범</td>
+               <td>매부리바다거북</td>
+               <td>만타가오리</td>
+               <td>고래상어</td>
+            </tr>
+         </table>
 
-<style>
-    th, td {
-      border : solid 1px sandybrown
-    }
-   </style> <!--CSS-->
-   
-   <table>
-      <tr>
-         <th rowspan="2">아랍</th> <!--제목 한 칸-->
-         <th colspan="2">제목1</th>
-         <th colspan="4">제목2</th> 
-         <th>제목3</th> 
-      </tr>
-   
-      <tr>
-         <td>석유산업(과거)</td>
-         <td>산업다각화(미래)</td>
-         <td>엑스포1</td> <!--내용 한 칸-->
-         <td>엑스포2</td>
-         <td>엑스포3</td>
-         <td>엑스포4</td>
-         <td>가상박람회</td>
-      </tr>
-   </table>
-
-<h1>아랍 에미리트 산업 소개</h1>
-   <h2>석유 산업</h2>
-   <h2>산업다각화</h2>
-      <h3>경제자유구역</h3>
-<h1>엑스포 소개</h1>
-   <h2>WETEX 2017</h2>
-   <h2>GITEX 2018</h2>
-   <h2>BIG-5 SHOW</h2>
-   <h2>DISTRICT 2020</h2>
-<h1>마스다르 시티</h1>
-   <h2>Future Urbanism Expo (virtual)</h2>
+      <h1>아랍 에미리트 산업 소개</h1>
+         <h2>석유 산업</h2>
+         <h2>산업다각화</h2>
+            <h3>경제자유구역</h3>
+      <h1>엑스포 소개</h1>
+         <h2>WETEX 2017</h2>
+         <h2>GITEX 2018</h2>
+         <h2>BIG-5 SHOW</h2>
+         <h2>DISTRICT 2020</h2>
+      <h1>마스다르 시티</h1>
+         <h2>Future Urbanism Expo (virtual)</h2>
+      <img /> <!--독립형태그--> 
 
 
 
-<img /> <!--독립형태그-->   
+      
+      <script>
+         var box = document.querySelector('.box');
+         // box.style.backgroundColor = 'red'
+         box.addEventListener('click',function(){
+         box.style.transform = 'translateX(1920px)'; })
+      </script>
 </body>
 </html>
