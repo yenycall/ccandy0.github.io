@@ -8,18 +8,43 @@
     <meta name="keywords" content="web publishing, kaywon, html, css" />
     <meta name="subject" contents="0915 class" />
     <meta name="author" contents="yenycall" />
+   <link rel="stylesheet" href="style.css">
+   <style>
+       .hello{
+         display: flex;
+         text-align: center;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+      }
+    </style>
+
  </head>
+
+
  <body> <!--본문-->
-    <h1> <a href="https://www.google.com" target="_blank">google</a></h1>
-    <a href="sub.html" target="_blank">sub</a>
-    <a href="https://www.naver.com"target="_blank">naver</a>
-    <a href="https://gunug.github.io/category/#education"target="_blank">web publishing</a>
-    <a href="https://m.cafe.naver.com/ca-fe/kwdmd" target="_blank" title="kaywon">dmd cafe</a>
+   <video controls>
+      <source src="센과 치히로.mp4" type="video/mp4"/>
+   </video>
+   <br></br>
+   <h1>
+      <div class="hello">@YENYCALL</div>
+   </h1>
+
+   <br></br>
+    <a style="color: palegreen" href="sub.html" target="_blank">sub</a>
+    <a style="color: fuchsia" a href="https://www.instagram.com/yenycall/" target="_blank">@yenycall</a></h1>
+    <a style="color: fuchsia" a href="https://www.google.com" target="_blank">google</a></h1>
+    <a style="color: fuchsia" a href="https://www.naver.com"target="_blank">naver</a>
+    <a style="color: fuchsia" a href="https://gunug.github.io/category/#education"target="_blank">web publishing</a>
+    <a style="color: fuchsia" a href="https://m.cafe.naver.com/ca-fe/kwdmd" target="_blank" title="kaywon">dmd cafe</a>
+    <br></br>
     <img width="600px" height="auto" src="https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/hero-images/advice/maps-satellite-images/satellite-image-of-globe.jpg" />
-    <img /> <!--독립형태그-->   
+    <img /> <!--독립형태그--> 
+    <br></br>  
 <태그 속성="값">내용</태그>
 <태그 속성="값"/>
-ccandy home
+
 
 <h1>대한민국</h1>
    <h2>서울특별시</h2>
@@ -29,6 +54,7 @@ ccandy home
 <h1>미국</h1>
 <h1>일본</h1>
 <h1>중국</h1>
+
 
 <p>문단은 한 가지 주제를 가지고 있는 여러 문장으로 이루어진 단</p>
 
@@ -135,5 +161,75 @@ html에서는              띄어쓰기, <br /> 줄바꿈 무시
   <button> 버튼입니다</button>
 </form>
 
-</body>
+<div></div>
+<section>
+   <h1>구획제목</h1>
+   구획내용
+   </section>
+   <nav>
+      <u1>
+         <li><a href="링크주소1">버튼 1</a></li>
+         <li><a href="링크주소2">버튼 2</a></li>
+      </u1>
+      <a href="링크주소1">버튼 1</a>
+      <a href="링크주소2">버튼 2</a>
+   </nav>
+   <article> <!-- 문서 주제와 다소 벗어난 이야기-->
+      <h1>기사 제목</h1>
+  </article>
+  <aside> <!-- 상관없는 이야기 -->
+      <h1>광고 제목</h1>
+      광고 내용
+  </aside>
+   <header></header><!--본문의 서론-->
+   <footer></footer><!--본문의 결론-->
+   <audio controls>
+      <source src = "해리포터.mp3", type="audio/mpeg">
+   </audio>
+   <audio controls>
+      <source src = "https://soundcloud.com/ywt191ytuaou/wav?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing", type="audio/mpeg">
+   </audio>
+
+
+   <script>
+ var canvas = document.getElementById("my Canvas");
+ //get element by id
+ //id 기준으로 요소 가져오기
+ var ctx = canvas.getContext("2d");
+//get context 내용 가져오기
+ctx.fillStyle = "#FF0000"; //색을 지정합니다.
+    
+    ctx.fillRect(25, 25, 100, 100); //채움 사각형
+    ctx.clearRect(45, 45, 60, 60); //사각형태로 지우기
+    ctx.strokeRect(50, 50, 50, 50); //윤곽 사각형
+    
+    ctx.fillStyle = "#000000";
+    ctx.beginPath(); //선그리기 시작
+    ctx.moveTo(65, 75); //펜 들어 움직이기
+    ctx.lineTo(90, 95); //선 그으며 움직이기
+    ctx.lineTo(90, 55);
+    ctx.fill(); //내부 채우기
+    
+    ctx.beginPath();
+    ctx.arc(225, 75, 50, 0, Math.PI * 2, true); // Outer circle 
+    ctx.moveTo(260, 75);
+    ctx.arc(225, 75, 35, 0, Math.PI, false);  // Mouth (clockwise)
+    ctx.moveTo(215, 65);
+    ctx.arc(210, 65, 5, 0, Math.PI * 2, true);  // Left eye
+    ctx.moveTo(245, 65);
+    ctx.arc(240, 65, 5, 0, Math.PI * 2, true);  // Right eye
+    ctx.stroke();
+   </script>
+
+   <video controls>
+      <source src="사이버펑크.mp4" type="video/mp4"/>
+   </video>
+ 
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/DIPxnt5vnhU?si=u0fJvy4e2LlitwqT" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen>
+   </iframe>
+
+   </body>
 </html> <!--종료태그-->
