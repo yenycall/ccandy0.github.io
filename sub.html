@@ -55,13 +55,15 @@ th, td {
             border : solid 1px sandybrown
          }
          .box{
+
                 width: 100vw;
                 /* height: 900px; */
                 /* background-color: black; */
+                transition: 2s;
             }
             .box:hover{
                 /* transform: translateX(-900px); */
-                transition: 5s;
+              
                 z-index: 0;
             }
             img{
@@ -77,13 +79,7 @@ th, td {
          
          <br><br>
          <button onclick="doAction()">play</button>
-         <script>
-   function doAction(){
-    var box = document.querySelector('.box');
-         // box.style.backgroundColor = 'red'
-         box.addEventListener('click',function(){
-         box.style.transform = 'translateX(1920px)'; })}
-  </script>
+
          <button class="stop">stop</button>
         
 
@@ -100,6 +96,14 @@ th, td {
          <h2>매부리바다거북</h2>
          <h2>만타가오리</h2>
          <h2>고래상어</h2>
+
+         <script>
+
+                  var box = document.querySelector('.box');
+                  function doAction(){
+                    box.style.transform = 'translateX(1920px)';
+                  }
+           </script>
 
 </body>
 </html>
