@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    @font-face {
+	font-family: 'Pretendard Variable';
+	font-weight: 45 920;
+	font-style: normal;
+	font-display: swap;
+	src: url('PretendardVariable.woff2') format('woff2-variations');
+}
+
+body {
+    width: 100vw;
+    font-family: 'Pretendard Variable';
+    margin:0px;
+}
+        header{
+            width: 100vw;
+            background-color: rgb(0, 128, 100);
+            color : white;
+            display : flex;
+            justify-content: space-between;
+        }
+        header ul {
+            list-style: none;
+            display: flex;
+            padding: 0px;
+        }
+        header li{
+            padding : 0px 10px;
+            font-size: small;
+            margin-top: 20px;
+        }
+        header h1{
+            margin: 20px;
+        }
+        header h1 span{
+            color:rgb(156, 231, 152);
+        }
+
+        section {
+            text-align: center;
+            margin : 100px;
+        }
+        section h1{
+            color: rgb(0, 128, 100);
+            font-weight: normal;
+            font-size: x-large;
+        }
+        section p{
+            margin : 0px 100px;
+            padding: 20px;
+        }
+        #main_visual{
+            background-image: url("main.png");
+            padding : 200px 0px;
+            width: 100vw;
+            line-height: 10px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            background-size: 100px auto;
+            background-repeat: no-repeat;
+            background-color: black;
+            background-size: contain; /*담기도록*/
+            background-size: cover; /*씌우도록*/
+            color:white;
+            background-position: 50% 100%;
+        }
+        #main_visual h2{
+            font-size: 50px;
+            letter-spacing: 10px;
+            text-align: center;
+        }
+        #main_visual p{
+            font-size: 20px;
+            width: 100vw;
+            text-align: center;
+        }
+        #button{
+            background-color: yellow;
+            color:black;
+            padding: 20px 40px;
+        }
+        #button:hover{
+            color:rgb(0, 128, 100);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1>MY<span>FOLIO</span></h1>
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT ME</li>
+                <li>SERVICES</li>
+                <li>MY WORK</li>
+                <li>CONTACT ME</li>
+            </ul>
+        </header>
+
+        <div id="main_visual">
+            <!-- <img class="main" src="main.png"/> -->
+            <p>
+               Lorem ipsum dolor sit iusmod tempor 
+            </p>
+            <h2>INCIDIDUNT BORE</h2>
+            <p>
+                Orem ipsum dolor sit amet, consectetur
+            </p>
+            <div id="button">
+                KNOW MORE
+            </div>
+        </div>
+        <section>
+            <h1>ABOUT ME</h1>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, modi amet reiciendis eligendi, perspiciatis sapiente, enim doloremque omnis animi reprehenderit corrupti itaque asperiores accusamus id quasi fuga. Veniam, numquam suscipit?
+               </p> 
+        <section>content2</section>
+    </div>
+</body>
+</html>

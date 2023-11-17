@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <style>
+    #wrapper1 { 
+      display: grid;
+      /*auto-fit:화면 너비에 따라 칼럼을 가득찰 때 까지 배치*/
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      margin-bottom: 20px;
+    }
+
+    #wrapper2 { 
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      margin-bottom: 20px;
+    }
+
+    .items:nth-child(2n+1) {
+      background-color: #bbb;
+    }
+
+    .items:nth-child(2n) {
+      background-color: #eee;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper1">
+    <div class="items">Lorem ipsum dolor sit, amet consectetur adipisicing.</div>
+    <div class="items">Lorem ipsum dolor sit, amet consectetur adipisicing.</div>
+    <div class="items">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi soluta eaque mollitia facilis, nam alias esse exercitationem autem accusantium? Natus!</div>
+    <div class="items">Lorem ipsum dolor sit, amet consectetur adipisicing.</div>
+    <div class="items">Lorem ipsum dolor sit, amet consectetur adipisicing.</div>
+  </div>
+
+  <div id="wrapper2">
+    <div class="items">Lorem ipsum dolor sit, amet consectetur adipisicing.</div>
+    <div class="items">Lorem ipsum dolor sit, amet consectetur adipisicing.</div>
+    <div class="items">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi soluta eaque mollitia facilis, nam alias esse exercitationem autem accusantium? Natus!</div>
+    <div class="items">Lorem ipsum dolor sit, amet consectetur adipisicing.</div>
+    <div class="items">Lorem ipsum dolor sit, amet consectetur adipisicing.</div>
+  </div>
+</body>
+</html>!-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    #wrapper { 
+      display: grid;
+      grid-template-columns: 1fr 4fr 1fr;
+      /*반응형으로 조작되는 fr단위(박스요소만-글자는 px단위이기때문에 반응형X)*/
+      grid-template-rows: 1000px;
+      margin: 0px;
+    }
+
+    .items:nth-child(2n+1) {
+      background-color: #bbb;
+    }
+
+    .items:nth-child(2n) {
+      background-color: #eee;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <div class="items"></div>
+    <div class="items"></div>
+    <div class="items"></div>
+  </div>
+</body>
+</html>
